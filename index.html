@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> HK Auto Spa - Premium Car Wash & Products</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <a href="#" class="logo"> HK Auto <span>Spa</span></a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav id="mainNav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Premium Car Care Services & Products</h1>
+          <p>
+            Give your vehicle the treatment it deserves with our professional
+            detailing services and high-quality car care products. We use only
+            the best to make your car shine like new.
+          </p>
+          <a href="#products" class="btn btn-accent">Shop Products</a>
+          <a href="#order" class="btn">Book Service</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="text-center">Our Services</h2>
+        <p class="text-center">
+          We offer a range of services to keep your car looking its best
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-img">
+              <img
+                src="./basicwash.jpg"
+                alt="Basic Wash"
+              />
+            </div>
+            <div class="service-content">
+              <h3>Basic Car Wash</h3>
+              <p>
+                A thorough exterior wash that includes hand drying, wheel
+                cleaning, and tire dressing.
+              </p>
+              <div class="price">₹699</div>
+              <a href="#order" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-img">
+              <img
+                src="./interiorwash.jpg"
+                alt="Premium Detail"
+              />
+            </div>
+            <div class="service-content">
+              <h3>Interior wash</h3>
+              <p>
+                Complete interior and exterior detailing including wax, polish,
+                and interior shampoo.
+              </p>
+              <div class="price">₹1500</div>
+              <a href="#order" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-img">
+              <img
+                src="./polish.jpg"
+                alt="Interior Clean"
+              />
+            </div>
+            <div class="service-content">
+              <h3>Polishing And Waxing</h3>
+              <p>
+                Deep cleaning of all interior surfaces including seats, carpets,
+                dashboard, and windows.
+              </p>
+              <div class="price">₹2000</div>
+              <a href="#order" class="btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+      <div class="container">
+        <h2 class="text-center">Our Products</h2>
+        <p class="text-center">
+          High-quality car care products for professional results at home
+        </p>
+
+        <div class="products-grid">
+          <div class="product-card" data-id="1">
+            <div class="product-img">
+              <img
+                src="./carshampoo.webp"
+                alt="Car Shampoo"
+              />
+            </div>
+            <div class="product-content">
+              <span class="product-category">Cleaning</span>
+              <h3>Premium Car Shampoo</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="product-price">549</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="2">
+            <div class="product-img">
+              <img
+                src="./polish-car.webp"
+                alt="Car Shiner"
+              />
+            </div>
+            <div class="product-content">
+              <span class="product-category">Polish</span>
+              <h3>Car Shiner & Polish</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="product-price">₹999</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="3">
+            <div class="product-img">
+              <img
+                src="./carshiner.jpeg"
+                alt="Tyre Degreaser"
+              />
+            </div>
+            <div class="product-content">
+              <span class="product-category">Tyre Care</span>
+              <h3>Tyre Degreaser & Cleaner</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="product-price">₹799</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="4">
+            <div class="product-img">
+              <img
+                src="./shield-car.jpg"
+                alt="Windshield Solution"
+              />
+            </div>
+            <div class="product-content">
+              <span class="product-category">Glass Care</span>
+              <h3>Windshield Cleaning Solution</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="product-price">₹299</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="5">
+            <div class="product-img">
+              <img
+                src="./glass-car.jpeg"
+                alt="Glass Cleaner"
+              />
+            </div>
+            <div class="product-content">
+              <span class="product-category">Glass Care</span>
+              <h3>Streak-Free Glass Cleaner</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="product-price">₹359</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="6">
+            <div class="product-img">
+              <img
+                src="./carmobileholder.webp"
+                alt="Car Mobile Holder"
+              />
+            </div>
+            <div class="product-content">
+              <span class="product-category">Accessories</span>
+              <h3>Car Phone Mount Holder</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="product-price">₹250</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="7">
+            <div class="product-img">
+              <img
+                src="./bikemobileholder.webp"
+                alt="Bike Mobile Holder"
+              />
+            </div>
+            <div class="product-content">
+              <span class="product-category">Accessories</span>
+              <h3>Bike Phone Mount Holder</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="product-price">₹600</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="8">
+            <div class="product-img">
+              <img
+                src="./decreaser.webp "
+                alt="Bike Shiner"
+              />
+            </div>
+            <div class="product-content">
+              <span class="product-category">Polish</span>
+              <h3>Bike Polish & Shiner</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="product-price">₹500</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order" id="order">
+      <div class="container">
+        <h2 class="text-center">Book Your Service</h2>
+        <p class="text-center">
+          Fill out the form below to schedule your car wash or detailing service
+        </p>
+
+        <div class="order-form">
+          <form id="bookingForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="basic-wash">Basic Wash - ₹699</option>
+                <option value="premium-detail">Premium Detail - ₹1500</option>
+                <option value="interior-clean">Interior Clean - ₹2000</option>
+                <option value="full-package">
+                  Full Package (All Services) - ₹4000
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special Instructions</label>
+              <textarea id="notes" name="notes"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-accent">Book Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="text-center">About HK Auto Spa</h2>
+
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Our Story</h3>
+            <p>
+              Founded in 2025, HK Auto Spa has been providing premium car care
+              services and products to the local community for over a decade.
+              What started as a small hand wash operation has grown into a
+              full-service auto detailing center with a reputation for
+              excellence at your door step.
+            </p>
+            <p>
+              Our team of experienced professionals is passionate about cars and
+              dedicated to delivering exceptional results. We use only the
+              highest quality products and the latest techniques to ensure your
+              vehicle receives the best possible care.
+            </p>
+            <p>
+              At HK Auto Spa, we believe that attention to detail makes all the
+              difference. Whether you're preparing your car for sale or just
+              want to maintain its showroom shine, we've got you covered with
+              both services and products.
+            </p>
+          </div>
+
+          <div class="about-img">
+            <img
+              src="./home.jpg"
+              alt="Auto Spa Team" 
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center">
+          Get in touch with our team for any questions or special requests
+        </p>
+
+        <div class="contact-grid">
+          
+
+          <div class="contact-info">
+            <h3>Contact Info</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>9876543210</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>hkautospa.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Location:1/23 selva street,Thoraipakkam,chennai-600097</p>
+            </div>
+          </div>
+
+<!--           
+          <div class="contact-info">
+            <h3>Visit Us</h3>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>123 Car Care Lane, Autoville, AV 12345</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <p>
+                Monday - Friday: 8:00 AM - 6:00 PM<br />
+                Saturday: 9:00 AM - 4:00 PM<br />
+                Sunday: Closed
+              </p>
+            </div>
+          </div> -->
+           <div class="contact-info">
+             <form id="bookingForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+
+            <div class="form-group">
+              <label for="notes">Issues</label>
+              <textarea id="notes" name="notes"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-accent">Submit</button>
+          </form>
+           </div>
+          
+
+          
+  
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#products">Products</a>
+          <a href="#order">Order</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <!-- <a href="#"><i class="fab fa-yelp"></i></a> -->
+        </div>
+
+        <p>&copy; 2025 HK Auto Spa. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="modal" id="bookingModal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <h2>Booking Confirmed!</h2>
+        <p>
+          Thank you for booking with Auto Spa. We've sent a confirmation to your
+          email with all the details.
+        </p>
+        <p>We look forward to serving you!</p>
+        <button class="btn" id="modalCloseBtn">Close</button>
+      </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <span class="close-modal" id="closeCartModal">&times;</span>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be added here dynamically -->
+        <div class="empty-cart">
+          <i
+            class="fas fa-shopping-cart"
+            style="font-size: 40px; margin-bottom: 15px"
+          ></i>
+          <p>Your cart is empty</p>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotal">₹0.00</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
